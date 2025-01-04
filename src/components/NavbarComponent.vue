@@ -99,7 +99,7 @@ export default {
           this.plainCartItems = [];
           return;
         }
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/get-cart", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/get-cart", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

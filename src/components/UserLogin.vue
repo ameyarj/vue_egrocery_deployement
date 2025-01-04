@@ -71,7 +71,7 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/user/login", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/user/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

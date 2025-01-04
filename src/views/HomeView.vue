@@ -213,7 +213,7 @@ async showCategoryProducts(categoryTitle) {
   this.selectedCategory = categoryTitle;
   this.showCategoryTitle = true;
 
-  const apiUrl = 'https://flask-egrocery-deployment.onrender.com/api/products';
+  const apiUrl = 'https://flask-egrocery-deploy.onrender.com/api/products';
 
   try {
     const response = await fetch(apiUrl);
@@ -249,7 +249,7 @@ async performSearch() {
       return;
     }
 
-    const response = await fetch(`https://flask-egrocery-deployment.onrender.com/search?query=${this.searchQuery}`);
+    const response = await fetch(`https://flask-egrocery-deploy.onrender.com/search?query=${this.searchQuery}`);
     if (response.ok) {
       const searchData = await response.json();
       this.searchResults = searchData;

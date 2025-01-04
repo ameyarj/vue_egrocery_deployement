@@ -142,7 +142,7 @@ export default {
     async fetchStoreManagerMessages() {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch("https://flask-egrocery-deployment.onrender.com/admin/get-messages", {
+      const response = await fetch("https://flask-egrocery-deploy.onrender.com/admin/get-messages", {
         method: "GET",
         headers: {
           Authorization: "Bearer " + token,
@@ -167,7 +167,7 @@ export default {
   async markAsRead(messageId) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`https://flask-egrocery-deployment.onrender.com/admin/mark-as-read`, {
+    const response = await fetch(`https://flask-egrocery-deploy.onrender.com/admin/mark-as-read`, {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + token,
@@ -199,7 +199,7 @@ export default {
         console.log("Token being fetched:", token);
 
         const response = await fetch(
-          "https://flask-egrocery-deployment.onrender.com/admin/all-requests",
+          "https://flask-egrocery-deploy.onrender.com/admin/all-requests",
           {
             method: "GET",
             headers: {
@@ -227,7 +227,7 @@ export default {
     async fetchCategoryRequests() {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/admin/category-requests", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/admin/category-requests", {
           method: "GET",
           headers: {
             Authorization: "Bearer " + token,
@@ -253,7 +253,7 @@ export default {
     async approveCategoryRequest(requestId) {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch(`https://flask-egrocery-deployment.onrender.com/admin/approve-category-request/${requestId}`, {
+    const response = await fetch(`https://flask-egrocery-deploy.onrender.com/admin/approve-category-request/${requestId}`, {
       method: "PUT",
       headers: {
         Authorization: "Bearer " + token,
@@ -281,7 +281,7 @@ async rejectCategoryRequest(requestId) {
       try {
         const token = localStorage.getItem("token");
         const response = await fetch(`
-        https://flask-egrocery-deployment.onrender.com/admin/reject-category-request/${requestId}`,
+        https://flask-egrocery-deploy.onrender.com/admin/reject-category-request/${requestId}`,
          {
           method: "PUT",
           headers: {
@@ -315,7 +315,7 @@ async rejectCategoryRequest(requestId) {
         console.log("Token being fetched:", token);
 
         const response = await fetch(
-          `https://flask-egrocery-deployment.onrender.com/admin/approve/${requestId}`,
+          `https://flask-egrocery-deploy.onrender.com/admin/approve/${requestId}`,
           {
             method: "PUT",
             headers: {
@@ -345,7 +345,7 @@ async rejectCategoryRequest(requestId) {
         console.log("Token being fetched:", token);
 
         const response = await fetch(
-          `https://flask-egrocery-deployment.onrender.com/admin/reject/${requestId}`,
+          `https://flask-egrocery-deploy.onrender.com/admin/reject/${requestId}`,
           {
             method: "PUT",
             headers: {

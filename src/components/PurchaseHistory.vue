@@ -52,7 +52,7 @@ import Navbar from "../components/NavbarComponent";
   
           const tokenPayload = JSON.parse(atob(token.split('.')[1]));
           const username = tokenPayload.username;
-          const response = await fetch(`https://flask-egrocery-deployment.onrender.com/purchase-history/${username}`, {
+          const response = await fetch(`https://flask-egrocery-deploy.onrender.com/purchase-history/${username}`, {
             method: 'GET',
             headers: {
               Authorization: `Bearer ${token}`,

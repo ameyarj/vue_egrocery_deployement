@@ -116,7 +116,7 @@
       async fetchProducts() {
         try {
           const token = localStorage.getItem("token");
-          const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/products", {
+          const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/products", {
             method: "GET",
             headers: {
               Authorization: "Bearer " + token,
@@ -149,7 +149,7 @@
       },
       async fetchCategories() {
     try {
-      const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/categories");
+      const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/categories");
       if (response.ok) {
         this.categories = await response.json();
       } else {
@@ -197,7 +197,7 @@
           }
   
           const response = await fetch(
-            `https://flask-egrocery-deployment.onrender.com/store-manager/edit-product/${productId}`,
+            `https://flask-egrocery-deploy.onrender.com/store-manager/edit-product/${productId}`,
             {
               method: "PUT",
               headers: {
@@ -233,7 +233,7 @@
           const productId = product.id;
   
           const response = await fetch(
-            `https://flask-egrocery-deployment.onrender.com/store-manager/delete-product/${productId}`,
+            `https://flask-egrocery-deploy.onrender.com/store-manager/delete-product/${productId}`,
             {
               method: "DELETE",
               headers: {

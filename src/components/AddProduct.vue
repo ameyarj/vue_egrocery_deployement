@@ -129,7 +129,7 @@ export default {
         }
 
         const response = await fetch(
-          "https://flask-egrocery-deployment.onrender.com/store-manager/add-product",
+          "https://flask-egrocery-deploy.onrender.com/store-manager/add-product",
           {
             method: "POST",
             headers: {
@@ -161,7 +161,7 @@ export default {
     },
     async fetchCategories() {
     try {
-      const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/categories");
+      const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/categories");
       if (response.ok) {
         this.categories = await response.json();
       } else {

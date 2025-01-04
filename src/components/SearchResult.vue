@@ -184,7 +184,7 @@ try {
   if (existingProduct) {
     existingProduct.quantity += product.count;
   } else {
-    const response = await fetch("https://flask-egrocery-deployment.onrender.com/add-to-cart",{
+    const response = await fetch("https://flask-egrocery-deploy.onrender.com/add-to-cart",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",

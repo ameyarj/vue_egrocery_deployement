@@ -80,7 +80,7 @@ export default {
     },
     async fetchCategories() {
       try {
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/categories");
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/categories");
         if (response.ok) {
           const data = await response.json();
           this.categories = data;

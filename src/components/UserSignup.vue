@@ -81,7 +81,7 @@ export default {
   },
   methods: {
     submitForm() {
-      fetch("https://flask-egrocery-deployment.onrender.com/user/signup", {
+      fetch("https://flask-egrocery-deploy.onrender.com/user/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

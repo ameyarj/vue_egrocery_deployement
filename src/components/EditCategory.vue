@@ -88,7 +88,7 @@ export default {
     async fetchCategories() {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/categories", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/categories", {
           method: "GET",
           headers: {
             Authorization: "Bearer " + token,
@@ -149,7 +149,7 @@ export default {
         }
 
         const response = await fetch(
-          `https://flask-egrocery-deployment.onrender.com/admin/edit-category/${categoryId}`,
+          `https://flask-egrocery-deploy.onrender.com/admin/edit-category/${categoryId}`,
           {
             method: "PUT",
             headers: {
@@ -181,7 +181,7 @@ export default {
         const categoryId = category.id;
 
         const response = await fetch(
-          `https://flask-egrocery-deployment.onrender.com/admin/delete-category/${categoryId}`,
+          `https://flask-egrocery-deploy.onrender.com/admin/delete-category/${categoryId}`,
           {
             method: "DELETE",
             headers: {

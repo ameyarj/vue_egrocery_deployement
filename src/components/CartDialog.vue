@@ -98,7 +98,7 @@ export default {
   try {
     const productToDelete = this.plainCartItems[index];
     console.log(productToDelete);
-    const response = await fetch("https://flask-egrocery-deployment.onrender.com/delete-from-cart", {
+    const response = await fetch("https://flask-egrocery-deploy.onrender.com/delete-from-cart", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
@@ -127,7 +127,7 @@ async clearServerCart() {
       return;
     }
 
-    const response = await fetch("https://flask-egrocery-deployment.onrender.com/clear-cart", {
+    const response = await fetch("https://flask-egrocery-deploy.onrender.com/clear-cart", {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -156,7 +156,7 @@ async BuyAllProducts() {
   console.log('Purchase Data Sent:', purchaseData);
 
   try {
-    const response = await fetch('https://flask-egrocery-deployment.onrender.com/buy-product', {
+    const response = await fetch('https://flask-egrocery-deploy.onrender.com/buy-product', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${token}`,

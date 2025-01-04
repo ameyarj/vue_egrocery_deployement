@@ -58,7 +58,7 @@
       submitFeedback() {
         const token = localStorage.getItem("token");
   
-        fetch("https://flask-egrocery-deployment.onrender.com/submit_feedback", {
+        fetch("https://flask-egrocery-deploy.onrender.com/submit_feedback", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

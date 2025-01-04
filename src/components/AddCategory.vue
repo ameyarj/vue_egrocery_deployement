@@ -66,7 +66,7 @@ export default {
         formData.append("image", this.category.image,this.category.image.name);
       }
 
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/admin/create-category", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/admin/create-category", {
           method: "POST",
           headers: {
             Authorization: "Bearer " + token,

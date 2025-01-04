@@ -102,7 +102,7 @@ mounted() {
     methods:{
       async fetchChartData() {
       try {
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/store-manager/chart-data", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/store-manager/chart-data", {
           method: "GET",
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
@@ -187,7 +187,7 @@ mounted() {
     async sendMessage() {
   try {
     const token = localStorage.getItem("token");
-    const response = await fetch('https://flask-egrocery-deployment.onrender.com/store-manager/send-message', {
+    const response = await fetch('https://flask-egrocery-deploy.onrender.com/store-manager/send-message', {
       method: 'POST',
       headers: {
         'Authorization': 'Bearer ' + token,
@@ -223,7 +223,7 @@ async submitCategoryRequest() {
     formData.append('description', this.categoryDescription);
     formData.append('image', this.categoryImage);
 
-    const response = await fetch('https://flask-egrocery-deployment.onrender.com/store-manager/request-category', {
+    const response = await fetch('https://flask-egrocery-deploy.onrender.com/store-manager/request-category', {
       method: 'POST',
       headers: {
         Authorization: 'Bearer ' + localStorage.getItem('token'), 
@@ -253,7 +253,7 @@ async submitCategoryRequest() {
 },
 async exportProducts() {
       try {
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/store-manager/export-products", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/store-manager/export-products", {
           method: "GET",
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),

@@ -72,7 +72,7 @@ export default {
    methods: {
     async fetchProducts() {
     try {
-      const response = await fetch("https://flask-egrocery-deployment.onrender.com/api/products");
+      const response = await fetch("https://flask-egrocery-deploy.onrender.com/api/products");
       if (response.ok) {
         const data = await response.json();
         this.products = data.map(product => ({
@@ -104,7 +104,7 @@ try {
   if (existingProduct) {
     existingProduct.quantity += product.count;
   } else {
-    const response = await fetch("https://flask-egrocery-deployment.onrender.com/add-to-cart",{
+    const response = await fetch("https://flask-egrocery-deploy.onrender.com/add-to-cart",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",

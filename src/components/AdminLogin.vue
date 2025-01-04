@@ -73,7 +73,7 @@ export default {
         this.message = ''; 
         this.messageType = '';
         this.loading = true; 
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/admin/login", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/admin/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

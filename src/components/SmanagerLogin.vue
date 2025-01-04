@@ -74,7 +74,7 @@ export default {
         this.message = ''; 
         this.messageType = '';
         this.loading = true; 
-        const response = await fetch("https://flask-egrocery-deployment.onrender.com/store-manager/login", {
+        const response = await fetch("https://flask-egrocery-deploy.onrender.com/store-manager/login", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

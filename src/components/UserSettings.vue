@@ -55,7 +55,7 @@
     },
     methods: {
       fetchUserDetails() {
-        fetch('https://flask-egrocery-deployment.onrender.com/user/details', {
+        fetch('https://flask-egrocery-deploy.onrender.com/user/details', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -90,7 +90,7 @@
             new_password: this.newPassword,
         };
 
-        fetch('https://flask-egrocery-deployment.onrender.com/user/edit', {
+        fetch('https://flask-egrocery-deploy.onrender.com/user/edit', {
             method: 'PUT',
             headers: {
             'Content-Type': 'application/json',

@@ -61,7 +61,7 @@ export default {
     },
   },
   mounted() {
-    fetch('https://flask-egrocery-deployment.onrender.com/get_feedback')
+    fetch('https://flask-egrocery-deploy.onrender.com/get_feedback')
       .then(response => response.json())
       .then(data => {
         this.feedbacks = data.feedback;
